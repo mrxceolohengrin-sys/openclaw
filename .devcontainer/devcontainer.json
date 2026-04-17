@@ -1,1 +1,12 @@
+{
+  "name": "Ollama Codespace Setup",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
 
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {}
+  },
+
+  "forwardPorts": [11434],
+
+  "postCreateCommand": "bash .devcontainer/setup.sh"
+}
